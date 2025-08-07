@@ -20,9 +20,14 @@ def homepage():
   return render_template('home.html')
 
 
-@app.route('/about')
+@app.route('/product')
 def product_page():
   return render_template('product.html', products=PRODUCT)
+
+
+@app.route('/about')
+def about_page():
+  return render_template('about.html')
 
 
 if __name__ == '__main__':

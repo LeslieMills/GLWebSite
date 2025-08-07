@@ -1,0 +1,153 @@
+#mainbody{
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh-60px);
+  /*background-color: #f0f0f0;*/
+  font-family: roboto;
+  /*
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eeeeee;
+  */
+}
+#topsection{
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  width: 95%;
+}
+#logo{
+  float: left;
+}
+#bannersection{
+  margin: 0, auto;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+#header{
+text-align:center; 
+font-family:Roboto;
+font-size: 30px;
+color: rgb(21, 70, 114);
+}
+#navbar{
+  text-align: right;
+  font-family: Roboto;
+  font-size: 20px;
+  color: rgb(21, 70, 114);
+  float: float-right;
+  padding-top: 20px;
+  position: relative;
+}
+#navbar a{
+  text-decoration: none;
+  color: rgb(21, 70, 114);
+  padding: 10px;
+}
+.banner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation-name: rotateBanner;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-duration: 24s;
+}
+
+.banner:nth-of-type(1){
+  animation-delay: 0s;
+}
+.banner:nth-of-type(2){
+  animation-delay: 4s;
+}
+.banner:nth-of-type(3){
+  animation-delay: 8s;
+}
+.banner:nth-of-type(4){
+  animation-delay: 12s;
+}
+.banner:nth-of-type(5){
+  animation-delay: 16s;
+}
+
+.banner img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+@keyframes rotateBanner{
+  0% {opacity: 0;}
+  8% {opacity: 1;}
+  25% {opacity: 1;}
+  33% {opacity: 0;}
+  100% {opacity: 0;}
+}
+#subheader{
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  color: rgb(21, 70, 114);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  border-block: 1px solid rgb(21, 70, 114);
+}
+#midsection{
+  width: 90%;   
+  font-family: Roboto;
+  font-size: 22px;
+  color: rgb(21, 70, 114);
+  padding-top: 10px;
+  padding-bottom: 5px;  
+  padding-left: 5%;
+  padding-right: 5%;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+.sectionimage{
+  width: 250px;
+  padding: 10px;
+  transition: transform .2s ease-in-out;    
+}
+.sectionimage:hover{
+  transform: scale(1.2);
+}
+.sector{
+  padding: 10px;
+  width: 90%;
+  font-family: Roboto;
+  text-align: center;             
+}
+
+.lineseparator{
+  border-top:2px dotted gray;
+  width: 90%;
+  margin-bottom: 20px;
+
+}
+
+#bottomsection{
+width: calc(100vw);
+font-family: Roboto;
+font-size: 22px;
+padding: 10px;
+width: 100%;  
+color: rgb(21, 70, 114);
+}
+#bottomheader{    
+   text-align: center;
+   font-family: Roboto;
+
+}
